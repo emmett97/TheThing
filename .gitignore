@@ -1,0 +1,8 @@
+__pycache__
+output
+data/combos.txt
+data/combos.txt.old
+data/config.json
+data/proxies.txt
+data/tokens.txt
+data/microsoft/*.p

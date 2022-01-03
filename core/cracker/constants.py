@@ -1,0 +1,12 @@
+STATUS_XSRF_FAILED = b"HTTP/1.1 403 Token Validation Failed"
+STATUS_LOGIN_SUCCESS = b"HTTP/1.1 200 OK"
+STATUS_RATE_LIMITED = b"HTTP/1.1 429"
+STATUS_BAD_REQUEST = b"HTTP/1.1 400 Bad request"
+RESPONSE_ACCOUNT_CONNECTED = b'{"errors":[{"code":32,"message":"Roblox account already connected"}]}'
+RESPONSE_XBOX_CONNECTED = b'{"errors":[{"code":33,"message":"Xbox account already connected"}]}'
+RESPONSE_ACCOUNT_LOCKED = b'{"errors":[{"code":4,"message":"Account has been locked. Please request a password reset.","userFacingMessage":"Something went wrong"}]}'
+RESPONSE_INVALID_TOKEN = b'{"errors":[{"code":24,"message":"Invalid Token"}]}'
+RESPONSE_NOT_AVAILABLE = b'{"errors":[{"code":403,"message":"Roblox.com is not available"}]}'
+RESPONSE_INVALID_LOGIN = b'{"errors":[{"code":1,"message":"Incorrect username or password. Please try again.","userFacingMessage":"Something went wrong"}]}'
+RESPONSE_SOCIAL_ONLY = b'{"errors":[{"code":5,"message":"Unable to login. Please use Social Network sign on.","userFacingMessage":"Something went wrong"}]}'
+RESPONSE_INVALID_CREDENTIALS = b'{"errors":[{"code":3,"message":"Username and Password are required. Please try again.","userFacingMessage":"Something went wrong"}]}'
