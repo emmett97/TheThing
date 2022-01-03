@@ -92,7 +92,7 @@ class MicrosoftClient:
             
         else:
             final_url = response.headers["location"]
-        
+        print(final_url)
         return final_url \
             .split("code=", 1)[1] \
             .split("&", 1)[0] \

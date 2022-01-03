@@ -9,7 +9,7 @@ import random
 import pickle
 import threading
 
-thread_count = 5
+thread_count = 15
 
 with open("data/config.json") as fp:
     config = json.load(fp)

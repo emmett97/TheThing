@@ -7,7 +7,7 @@ import glob
 import json
 import os
 
-thread_count = 50
+thread_count = 500
 queue = []
 write_lock = threading.Lock()
 
@@ -44,6 +44,7 @@ def thread_func():
     while queue:
         fpath, item = queue.pop(0)
         proxy_url = "http://" + proxy_list[next(proxy_index) % len(proxy_list)]
+        print(proxy_url)
         ms_client = item["client"]
         ms_client._rs.proxies.update({
             "http": proxy_url,

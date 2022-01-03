@@ -131,5 +131,5 @@ class ArkoseSelfSolver:
 
         threading.Thread(
             target=app.run,
-            kwargs={"port": self._port_num}
+            kwargs={"host": "0.0.0.0", "port": self._port_num}
             ).start()
